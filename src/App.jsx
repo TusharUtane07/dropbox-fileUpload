@@ -8,6 +8,8 @@ const App = () => {
 	const handleSuccess = (files) => {
 		console.log(files[0].thumbnailLink);
 		setImageLink(files[0].thumbnailLink);
+
+		toast.success("file uploaded successfully");
 	};
 
 	return (
